@@ -16,6 +16,10 @@ const { current = '' } = Astro.props;
 </style>
 
 <header>
-  <Logo />
+
+{
+  current != "" && <Logo />
+}
+  
   <Nav current={current} />
 </header>

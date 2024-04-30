@@ -25,7 +25,33 @@ This page is an adapted version of [markdown-test-page](https://github.com/fullp
 
 # Heading one
 
-Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem. Ut laborum cillum laboris fugiat culpa sint irure do reprehenderit culpa occaecat. Exercitation esse mollit tempor magna aliqua in occaecat aliquip veniam reprehenderit nisi dolor in laboris dolore velit.
+Soy un entusiasta de la tecnología.
+
+En 2010 comencé mis primeros pasos en programación, adaptando un software de facturas en excel.
+
+En 2013 tuve mi primer trabajo en un cibercafé, donde aprendí a reparar computadoras.
+
+En 2015 entré a la universidad en Montemorelos, Nuevo León; trabajé de todo. Me enseñó el valor de {}
+
+En 2016 tuve mi primer trabajo como front-end developer. Trabajando con templates de WordPress.
+
+En 2017 en la misma empresa, me dediqué a labores de backend en Laravel y Ruby on Rails.
+
+En 2018 desarrollé de manera voluntaria un sistema médico para brigadas de salud offlines para el grupoaalmma.com. Participé en el hackathon más grande del mundo, y quedé finalista.
+
+En 2019 desarrollé un sistema de administración de grupos misioneros totalmente en Javascript, como servicio social. 
+
+En 2019 desarrollé un sistema de hojas clínicas para la Secretaría de Salud de Nuevo León en Laravel, como proyecto de titulación.
+
+En 2020 comencé a trabajar en una fintech; automatizando de la conciliación bancaria utilizando SQL Server.
+
+En 2021 desarrollé una app para casas de empeño con Firebase y Angular.
+
+En 2022 desarrollé un sistema de control de acceso y viviendas para residenciales con Laravel Voyager.
+
+En 2024 llegué a ser Gerente de Desarrollo, liderando proyectos masivos en contacto con las marcas Mastercard y Visa.
+
+
 
 ## Heading two
 
