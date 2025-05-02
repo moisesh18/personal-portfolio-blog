@@ -1,36 +1,106 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import BaseLayout from "../../layouts/BaseLayout.astro";
 
-const title = 'Blog';
-const description = 'Latest articles.';
+const title = "Blog";
+const description = "Latest articles.";
 const permalink = `${Astro.site.href}blog`;
 
-let allPosts = await Astro.glob('../../data/blog-posts/*.md');
-allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf());
+let allPosts = await Astro.glob("../../data/blog-posts/*.md");
+allPosts = allPosts
+  .sort(
+    (a, b) =>
+      new Date(b.frontmatter.publishDate).valueOf() -
+      new Date(a.frontmatter.publishDate).valueOf()
+  )
+  .filter((post) => post.frontmatter.status === "published");
+
+// Obtener todas las categorías únicas
+const allCategories = [
+  ...new Set(allPosts.flatMap((post) => post.frontmatter.categories || [])),
+].sort();
 ---
 
-<BaseLayout title={title} description={description} permalink={permalink} current="blog">
+<BaseLayout
+  title={title}
+  description={description}
+  permalink={permalink}
+  current="blog"
+>
   <div class="container">
     <h1>Blog</h1>
-    {allPosts.map((post, index) => {
-      const href = `/blog/${post.file.split('/').pop().split('.').shift()}`;
-      return (
-        <div>
-          { index !== 0 && <hr /> }
-          <div class="post-item">
-            <h2>
-              <a href={href}>{post.frontmatter.title}</a>
-            </h2>
-            <p>{post.frontmatter.description}</p>
-            <div class="post-item-footer">
-              <span class="post-item-date">— {post.frontmatter.publishDate}</span>
+
+    <div class="categories">
+      <button class="category active" data-category="all">Todas</button>
+      {
+        allCategories.map((category) => (
+          <button class="category" data-category={category}>
+            {category}
+          </button>
+        ))
+      }
+    </div>
+
+    <div id="posts-container">
+      {
+        allPosts.map((post, index) => {
+          const href = `/blog/${post.file.split("/").pop().split(".").shift()}`;
+          const categories = post.frontmatter.categories || [];
+          return (
+            <div class="post-item" data-categories={categories.join(",")}>
+              {index !== 0 && <hr />}
+              <h2>
+                <a href={href}>{post.frontmatter.title}</a>
+              </h2>
+              <p>{post.frontmatter.description}</p>
+              <div class="post-item-footer">
+                <span class="post-item-date">
+                  — {post.frontmatter.publishDate}
+                </span>
+                <div class="post-categories">
+                  {categories.map((category) => (
+                    <span class="post-category">{category}</span>
+                  ))}
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      )
-    })}
+          );
+        })
+      }
+    </div>
   </div>
 </BaseLayout>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const posts = document.querySelectorAll<HTMLElement>(".post-item");
+    const categoryButtons =
+      document.querySelectorAll<HTMLButtonElement>(".category");
+
+    categoryButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        // Actualizar botones activos
+        categoryButtons.forEach((btn) => btn.classList.remove("active"));
+        button.classList.add("active");
+
+        const selectedCategory = button.dataset.category;
+
+        // Filtrar posts
+        posts.forEach((post) => {
+          if (selectedCategory === "all") {
+            post.classList.remove("hidden");
+          } else {
+            const categories = post.dataset.categories?.split(",") || [];
+            if (categories.includes(selectedCategory)) {
+              post.classList.remove("hidden");
+            } else {
+              post.classList.add("hidden");
+            }
+          }
+        });
+      });
+    });
+  });
+</script>
 
 <style>
   h2,
@@ -41,12 +111,60 @@ allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf()
 
   .post-item-date {
     color: var(--text-secondary);
-    text-align: left;
     text-transform: uppercase;
     margin-right: 16px;
   }
 
-  hr {
-    margin: 60px auto;
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .category {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    transition: background-color 0.2s;
+    border: none;
+    cursor: pointer;
+  }
+
+  .category:hover {
+    background: var(--bg-tertiary);
+  }
+
+  .category.active {
+    background: var(--accent);
+    color: var(--bg-primary);
+  }
+
+  .post-categories {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .post-category {
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    font-size: 0.9em;
+    padding: 0.25rem 0.5rem;
+    background: var(--bg-secondary);
+    border-radius: 4px;
+  }
+
+  .post-item {
+    transition: opacity 0.3s ease;
+  }
+
+  .post-item.hidden {
+    display: none;
+    opacity: 0;
   }
 </style>

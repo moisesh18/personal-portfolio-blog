@@ -1,47 +1,339 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 
-const title = 'Portafolio';
-const description = 'Mi portafolio';
+const title = "Portafolio";
+const description = "Mi portafolio";
 const permalink = `${Astro.site.href}about`;
 ---
 
-<BaseLayout title={title} description={description} permalink={permalink} current="about">
+<BaseLayout
+  title={title}
+  description={description}
+  permalink={permalink}
+  current="about"
+>
   <div class="container">
-    <p>Text placeholder via <a href="https://jeffsum.com/" target="_blank">Jeffsum</a>.</p>
     <figure class="about-image">
-      <img src="/assets/about-illustration.webp" alt="Illustration of a notebook" width="330">
-      <figcaption>
-        Illustration by
-        <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6" target="_blank" rel="noopener">Icons 8</a>
-        from
-        <a href="https://icons8.com/illustrations" target="_blank" rel="noopener">Ouch!</a>
-      </figcaption>
+      <img src="/assets/moises.jpeg" width="330" />
     </figure>
-    <p>So you two dig up, dig up dinosaurs? What do they got in there? King Kong? My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little bastard! Life finds a way. God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs.</p>
-    <p>You really think you can fly that thing? You know what? It is beets. I've crashed into a beet truck. Forget the fat lady! You're obsessed with the fat lady! Drive us out of here! Is this my espresso machine? Wh-what is-h-how did you get my espresso machine?</p>
-    <p>Hey, you know how I'm, like, always trying to save the planet? Here's my chance. Hey, take a look at the earthlings. Goodbye! I was part of something special. Just my luck, no ice. You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager?</p>
-    <p>Jaguar shark! So tell me - does it really exist? This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Yes, Yes, without the oops! You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager?</p>
-    <p>Yes, Yes, without the oops! Do you have any idea how long it takes those cups to decompose. They're using our own satellites against us. And the clock is ticking. Do you have any idea how long it takes those cups to decompose. My dad once told me, laugh and the world laughs with you, Cry, and I'll give you something to cry about you little bastard!</p>
+    <p>Soy Moisés, entusiasta de la tecnología desde niño.</p>
+    <p>
+      Graduado de Ingenieria en Sistemas Computacionales por la universidad de
+      Montemorelos en 2019.
+    </p>
+    <p>
+      Actualmente me desarrollo como Gerente de Desarrollo en el sector bancario
+      pero en mis tiempos libres me apasiona crear SAAS (software como servicio)
+      y desarrollar proyectos para la obra de Dios. 🙏🏼
+    </p>
+    <p>
+      <div class="tech-stacks">
+        <div class="stack personal">
+          <h4>Stack Personal</h4>
+          <div class="tech-icons">
+            <div class="tech-item">
+              <img
+                src="/assets/tech/linux.svg"
+                alt="Linux"
+                title="Linux"
+                class="tech-icon"
+              />
+              <span>Linux</span>
+            </div>
+            <div class="tech-item">
+              <img
+                src="/assets/tech/apache.svg"
+                alt="Apache"
+                title="Apache"
+                class="tech-icon"
+              />
+              <span>Apache</span>
+            </div>
+            <div class="tech-item">
+              <img
+                src="/assets/tech/mysql.svg"
+                alt="MySQL"
+                title="MySQL"
+                class="tech-icon"
+              />
+              <span>MySQL</span>
+            </div>
+            <div class="tech-item">
+              <img
+                src="/assets/tech/php.svg"
+                alt="PHP"
+                title="PHP"
+                class="tech-icon"
+              />
+              <span>PHP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stack work">
+          <h4>Stack Laboral</h4>
+          <div class="tech-icons">
+            <div class="tech-item">
+              <img
+                src="/assets/tech/windows.svg"
+                alt="Windows"
+                title="Windows"
+                class="tech-icon"
+              />
+              <span>Windows</span>
+            </div>
+            <div class="tech-item">
+              <img
+                src="/assets/tech/iis.svg"
+                alt="IIS"
+                title="IIS"
+                class="tech-icon"
+              />
+              <span>IIS</span>
+            </div>
+            <div class="tech-item">
+              <img
+                src="/assets/tech/sqlserver.svg"
+                alt="SQL Server"
+                title="SQL Server"
+                class="tech-icon"
+              />
+              <span>SQL Server</span>
+            </div>
+            <div class="tech-item">
+              <img
+                src="/assets/tech/csharp.svg"
+                alt="C#"
+                title="C#"
+                class="tech-icon"
+              />
+              <span>C#</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </p>
+
+    <hr />
+
+    <h2>Proyectos Destacados</h2>
+    <p>
+      Todo ellos son accesibles a través de <a
+        href="https://github.com/moisesh18"
+        target="_blank"
+        rel="noopener"
+      >
+        GitHub.com/moisesh18</a
+      >
+      <div class="projects-grid">
+        <div class="project">
+          <img
+            src="/assets/grupoaalmma.webp"
+            alt="Sistema de Gestión Médica AALMMA"
+            width="300"
+          />
+          <h3>Brigadas de salud rurales</h3>
+          <span>Mi primer sistema 🥹</span>
+          <p>
+            Hecho con CakePHP. Viajé en múltiples ocasiones con un grupo de
+            estudiantes médicos, ejecutando este sistema para gestionar
+            pacientes, medicamentos y consultas.
+          </p>
+        </div>
+
+        <div class="project">
+          <img
+            src="/assets/projects/mj.gif"
+            alt="Sistema de Gestión de Ministerios"
+            width="300"
+          />
+          <h3>Ministerio Juvenil</h3>
+          <span>Hecho absolutamente con JS 🤯</span>
+          <p>
+            Para el servicio social, me aventé este sistema para la
+            administración de ministerios y clubes orientados a la obra de Dios
+            en mi universidad.
+          </p>
+          <p>Angular, MongoDB, NodeJS, Express.</p>
+        </div>
+
+        <div class="project">
+          <img
+            src="/assets/condominios.webp"
+            alt="Sistema de Gestión de Condominios"
+            width="300"
+          />
+          <h3>Gestión de Condominios</h3>
+          <span>Hecho con Laravel Voyager 🛳️</span>
+          <p>
+            Me contactaron para realizar un sstema integral para la
+            administración de condominios, incluyendo gestión de residentes,
+            pagos y mantenimiento.
+          </p>
+        </div>
+
+        <div class="project">
+          <img
+            src="/assets/projects/mayer.gif"
+            alt="Sistema para Clínicas Oftalmológicas"
+            width="300"
+          />
+          <h3>Gestión de Clinica Oftalmológica</h3>
+          <span>Usando Laravel 11! 🤩</span>
+          <p>
+            Un amigo me contactó para digitalizar procesos de la Clinica Mayer
+            en Obregón, Sonora; incluyendo expedientes médicos, citas y
+            seguimiento de pacientes a través de WhatsApp.
+          </p>
+        </div>
+      </div>
+    </p>
+
+    <style>
+      .about-image {
+        float: right;
+        max-width: 300px;
+      }
+
+      .about-image img {
+        border-radius: 8px;
+        margin-bottom: 1.5em;
+        width: 100%;
+        height: auto;
+      }
+
+      @media (max-width: 1020px) {
+        .about-image {
+          float: none;
+          margin: 0 auto 2em;
+          text-align: center;
+        }
+      }
+
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+        margin: 2em 0;
+      }
+
+      @media (max-width: 768px) {
+        .projects-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .project {
+        background: var(--background-secondary);
+        border-radius: 8px;
+        padding: 1.5em;
+        transition: transform 0.2s ease;
+      }
+
+      .project p,
+      .proejct span {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        margin: 0.5em 0;
+        text-align: justify;
+      }
+
+      .project:hover {
+        transform: translateY(-5px);
+      }
+
+      .project img {
+        width: 100%;
+        border-radius: 4px;
+        margin-bottom: 1em;
+      }
+
+      .project h3 {
+        margin: 0.5em 0;
+      }
+
+      h2 {
+        margin: 2em 0 1em;
+      }
+
+      .tech-stacks {
+        display: flex;
+        gap: 2rem;
+        margin: 1rem 0;
+        flex-wrap: wrap;
+      }
+
+      .stack {
+        flex: 1;
+        min-width: 250px;
+        padding: 1rem;
+        border-radius: 8px;
+        background: var(--background-secondary);
+      }
+
+      .stack h4 {
+        margin: 0 0 1rem 0;
+        text-align: center;
+      }
+
+      .tech-icons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      .tech-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .tech-item span {
+        font-size: 0.9rem;
+        color: var(--text-color);
+      }
+
+      .tech-icon {
+        width: 40px;
+        height: 40px;
+        transition: transform 0.2s;
+        filter: brightness(0) invert(0);
+      }
+
+      .tech-icon:hover {
+        transform: scale(1.2);
+      }
+
+      :global(.theme-dark) .tech-icon {
+        filter: brightness(0) invert(1);
+      }
+
+      /* Excepciones para íconos específicos */
+      :global(.theme-dark) .tech-icon[src*="linux.svg"] {
+        filter: brightness(0.8) invert(0);
+      }
+
+      /* Excepciones para íconos específicos */
+      :global(.theme-dark) .tech-icon[src*="csharp.svg"] {
+        filter: brightness(1) invert(0.2);
+      }
+
+      /* Excepciones para íconos específicos */
+      :global(.theme-dark) .tech-icon[src*="apache.svg"] {
+        filter: brightness(1) invert(0);
+      }
+
+      @media (max-width: 768px) {
+        .tech-stacks {
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .stack {
+          width: 100%;
+        }
+      }
+    </style>
   </div>
 </BaseLayout>
-
-<style>
-  .about-image {
-    float: right;
-    margin: -3em -7em 2em 2em;
-    max-width: 300px;
-  }
-
-  .about-image img {
-    border-radius: 8px;
-    margin-bottom: 1.5em;
-  }
-
-  @media (max-width: 1020px) {
-    .about-image {
-      float: none;
-      margin: 0 auto 2em;
-    }
-  }
-</style>

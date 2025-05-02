@@ -39,7 +39,7 @@ En 2017 en la misma empresa, me dediqué a labores de backend en Laravel y Ruby 
 
 En 2018 desarrollé de manera voluntaria un sistema médico para brigadas de salud offlines para el grupoaalmma.com. Participé en el hackathon más grande del mundo, y quedé finalista.
 
-En 2019 desarrollé un sistema de administración de grupos misioneros totalmente en Javascript, como servicio social. 
+En 2019 desarrollé un sistema de administración de grupos misioneros totalmente en Javascript, como servicio social.
 
 En 2019 desarrollé un sistema de hojas clínicas para la Secretaría de Salud de Nuevo León en Laravel, como proyecto de titulación.
 
@@ -50,8 +50,6 @@ En 2021 desarrollé una app para casas de empeño con Firebase y Angular.
 En 2022 desarrollé un sistema de control de acceso y viviendas para residenciales con Laravel Voyager.
 
 En 2024 llegué a ser Gerente de Desarrollo, liderando proyectos masivos en contacto con las marcas Mastercard y Visa.
-
-
 
 ## Heading two
 
@@ -197,10 +195,10 @@ Ex amet id ex aliquip id do laborum excepteur exercitation elit sint commodo occ
 
 ```html
 <script>
-  let count = 0
+  let count = 0;
 
   function handleClick() {
-    count += 1
+    count += 1;
   }
 </script>
 

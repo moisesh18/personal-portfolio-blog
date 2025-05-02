@@ -1,25 +1,42 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import BaseLayout from "../../layouts/BaseLayout.astro";
 /*import Bio from '../../components/Bio.astro'; */
-import getPostData from '../../utils/getPostData';
+import getPostData from "../../utils/getPostData";
 
 export async function getStaticPaths() {
-  const posts = await Astro.glob('../../data/blog-posts/*.md');
-  return posts.map(p => ({
-    params: { slug: p.file.split('/').pop().split('.').shift() },
+  const posts = await Astro.glob("../../data/blog-posts/*.md");
+  return posts.map((p) => ({
+    params: { slug: p.file.split("/").pop().split(".").shift() },
     props: { post: p },
   }));
 }
 
 const { Content, frontmatter } = Astro.props.post;
-const { title, description, publishDate } = frontmatter;
+const { title, description, publishDate, categories } = frontmatter;
 const { slug, readingTime } = getPostData(Astro.props.post);
 const permalink = `${Astro.site.href}blog/${slug}`;
 ---
 
-<BaseLayout title={title} description={description} permalink={permalink} current="blog">
+<BaseLayout
+  title={title}
+  description={description}
+  permalink={permalink}
+  current="blog"
+>
   <header>
-    <p>{publishDate} ~ {readingTime} </p>
+    <p>
+      {publishDate} ~ {readingTime} |
+      {
+        categories?.map((category, index) => (
+          <span>
+            {index > 0 && " • "}
+            <a href={`/blog?category=${encodeURIComponent(category)}`}>
+              {category}
+            </a>
+          </span>
+        ))
+      }
+    </p>
     <h1>{title}</h1>
     <hr />
   </header>
@@ -48,13 +65,22 @@ const permalink = `${Astro.site.href}blog/${slug}`;
     font-weight: 600;
   }
 
+  header p a {
+    color: var(--text-secondary);
+    text-decoration: none;
+  }
+
+  header p a:hover {
+    color: var(--accent);
+  }
+
   header hr {
     min-width: 100px;
     width: 30%;
   }
- 
-  :global(.content img){
-    display: block; 
+
+  :global(.content img) {
+    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;

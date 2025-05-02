@@ -5,6 +5,9 @@
   --primary-color: #548e9b;
   --font-family-serif: Merriweather, serif;
   --font-family-sans: 'Fira Sans', sans-serif;
+  --bg-secondary: #f5f5f5;
+  --bg-tertiary: #e8e8e8;
+  --accent: #548e9b;
 }
 
 :root.theme-dark {
@@ -12,6 +15,9 @@
   --text-main: #fff;
   --text-secondary: #ccc;
   --primary-color: #548e9b;
+  --bg-secondary: #2a2b2c;
+  --bg-tertiary: #333435;
+  --accent: #6ba7b4;
 }
 
 html {
@@ -276,4 +282,9 @@ input[name='theme-toggle'] {
     font-size: 1.2rem;
     margin: 1em 0;
   }
+}
+
+
+hr {
+  margin: 60px auto;
 }
