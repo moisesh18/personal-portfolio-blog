@@ -1,10 +1,15 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import ProjectsAnimator from "../components/ProjectsAnimator.svelte";
 
 const title = "Portafolio";
 const description = "Mi portafolio";
 const permalink = `${Astro.site.href}about`;
 ---
+
+<style>
+  @import "../styles/about.css";
+</style>
 
 <BaseLayout
   title={title}
@@ -14,326 +19,273 @@ const permalink = `${Astro.site.href}about`;
 >
   <div class="container">
     <figure class="about-image">
-      <img src="/assets/moises.jpeg" width="330" />
+      <img src="/assets/moises3.jpg" width="330" />
     </figure>
-    <p>Soy Moisés, entusiasta de la tecnología desde niño.</p>
+    <p>
+      Entusiasta de la automatización de procesos, apasionado por los SAAS y
+      "early adopter".
+    </p>
     <p>
       Graduado de Ingenieria en Sistemas Computacionales por la universidad de
       Montemorelos en 2019.
     </p>
     <p>
       Actualmente me desarrollo como Gerente de Desarrollo en el sector bancario
-      pero en mis tiempos libres me apasiona crear SAAS (software como servicio)
+      pero en mis tiempos libres me apasiona crear SaaS (software como servicio)
       y desarrollar proyectos para la obra de Dios. 🙏🏼
     </p>
-    <p>
-      <div class="tech-stacks">
-        <div class="stack personal">
-          <h4>Stack Personal</h4>
-          <div class="tech-icons">
-            <div class="tech-item">
-              <img
-                src="/assets/tech/linux.svg"
-                alt="Linux"
-                title="Linux"
-                class="tech-icon"
-              />
-              <span>Linux</span>
-            </div>
-            <div class="tech-item">
-              <img
-                src="/assets/tech/apache.svg"
-                alt="Apache"
-                title="Apache"
-                class="tech-icon"
-              />
-              <span>Apache</span>
-            </div>
-            <div class="tech-item">
-              <img
-                src="/assets/tech/mysql.svg"
-                alt="MySQL"
-                title="MySQL"
-                class="tech-icon"
-              />
-              <span>MySQL</span>
-            </div>
-            <div class="tech-item">
-              <img
-                src="/assets/tech/php.svg"
-                alt="PHP"
-                title="PHP"
-                class="tech-icon"
-              />
-              <span>PHP</span>
-            </div>
-          </div>
-        </div>
 
-        <div class="stack work">
-          <h4>Stack Laboral</h4>
-          <div class="tech-icons">
-            <div class="tech-item">
-              <img
-                src="/assets/tech/windows.svg"
-                alt="Windows"
-                title="Windows"
-                class="tech-icon"
-              />
-              <span>Windows</span>
-            </div>
-            <div class="tech-item">
-              <img
-                src="/assets/tech/iis.svg"
-                alt="IIS"
-                title="IIS"
-                class="tech-icon"
-              />
-              <span>IIS</span>
-            </div>
-            <div class="tech-item">
-              <img
-                src="/assets/tech/sqlserver.svg"
-                alt="SQL Server"
-                title="SQL Server"
-                class="tech-icon"
-              />
-              <span>SQL Server</span>
-            </div>
-            <div class="tech-item">
-              <img
-                src="/assets/tech/csharp.svg"
-                alt="C#"
-                title="C#"
-                class="tech-icon"
-              />
-              <span>C#</span>
-            </div>
+    <div class="tech-stacks">
+      <div class="stack personal">
+        <h4>Stack Personal</h4>
+        <div class="tech-icons">
+          <div class="tech-item">
+            <img
+              src="/assets/tech/linux.svg"
+              alt="Linux"
+              title="Linux"
+              class="tech-icon"
+            />
+            <span>Linux</span>
+          </div>
+          <div class="tech-item">
+            <img
+              src="/assets/tech/apache.svg"
+              alt="Apache"
+              title="Apache"
+              class="tech-icon"
+            />
+            <span>Apache</span>
+          </div>
+          <div class="tech-item">
+            <img
+              src="/assets/tech/mysql.svg"
+              alt="MySQL"
+              title="MySQL"
+              class="tech-icon"
+            />
+            <span>MySQL</span>
+          </div>
+          <div class="tech-item">
+            <img
+              src="/assets/tech/php.svg"
+              alt="PHP"
+              title="PHP"
+              class="tech-icon"
+            />
+            <span>PHP</span>
           </div>
         </div>
       </div>
-    </p>
+
+      <div class="stack work">
+        <h4>Stack Laboral</h4>
+        <div class="tech-icons">
+          <div class="tech-item">
+            <img
+              src="/assets/tech/windows.svg"
+              alt="Windows"
+              title="Windows"
+              class="tech-icon"
+            />
+            <span>Windows</span>
+          </div>
+          <div class="tech-item">
+            <img
+              src="/assets/tech/iis.svg"
+              alt="IIS"
+              title="IIS"
+              class="tech-icon"
+            />
+            <span>IIS</span>
+          </div>
+          <div class="tech-item">
+            <img
+              src="/assets/tech/sqlserver.svg"
+              alt="SQL Server"
+              title="SQL Server"
+              class="tech-icon"
+            />
+            <span>SQL Server</span>
+          </div>
+          <div class="tech-item">
+            <img
+              src="/assets/tech/csharp.svg"
+              alt="C#"
+              title="C#"
+              class="tech-icon"
+            />
+            <span>C#</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <hr />
 
-    <h2>Proyectos Destacados</h2>
-    <p>
-      Todo ellos son accesibles a través de <a
-        href="https://github.com/moisesh18"
-        target="_blank"
-        rel="noopener"
-      >
-        GitHub.com/moisesh18</a
-      >
+    <div class="projects-container">
+      <h2>Proyectos Destacados</h2>
+      <div>
+        Todo ellos son accesibles a través de <a
+          href="https://github.com/moisesh18"
+          target="_blank"
+          rel="noopener"
+        >
+          GitHub.com/moisesh18</a
+        >
+        <div class="projects-grid">
+          <div class="project">
+            <div class="project-image-container">
+              <img
+                src="/assets/projects/medibrim.png"
+                alt="Imagen estática de Medibrim"
+                class="project-image static"
+              />
+              <img
+                src="/assets/projects/medibrim.webp"
+                alt="Sistema de Gestión Médica AALMMA"
+                width="640"
+                height="322"
+                class="project-image webp"
+              />
+            </div>
+            <h3>Brigadas de salud rurales - MEDIBRIM</h3>
+            <span>Mi primer sistema 🥹</span>
+            <p>
+              Viajé en múltiples ocasiones con <a
+                href="http://grupoaalmma.com"
+                target="_blank"
+                rel="noopener">grupoaalmma.com</a
+              >, creando una red local en comunidades rurales para usar este
+              sistema que gestionaba pacientes, medicamentos y consultas.
+              <p>
+                Al final este proyecto se convirtió en mi proyecto de titulación
+                en la universidad. <a
+                  href="https://revistas.unac.edu.co/ojs/index.php/unaciencia/article/view/227"
+                  target="_blank"
+                  rel="noopener"
+                  >Incluso fue publicado en una revista cientifica.</a
+                >
+              </p>
+            </p>
+          </div>
+
+          <div class="project">
+            <div class="project-image-container">
+              <img
+                src="/assets/projects/mj.png"
+                alt="Imagen estática de MJ"
+                class="project-image static"
+              />
+              <img
+                src="/assets/projects/mj.webp"
+                alt="Sistema de Gestión de Ministerios"
+                width="640"
+                height="322"
+                class="project-image webp"
+              />
+            </div>
+            <h3>Ministerio Juvenil</h3>
+            <span>Hecho absolutamente con JS 🤯</span>
+            <p>
+              Para cumplir con el servicio social de mi universidad, desarrollé
+              este sistema para la administración de ministerios y clubes
+              orientados a la obra de Dios en mi universidad.
+            </p>
+            <p>Angular, MongoDB, NodeJS, Express.</p>
+          </div>
+
+          <div class="project">
+            <div class="project-image-container">
+              <img
+                src="/assets/projects/administrum.png"
+                alt="Imagen estática de Administrum"
+                class="project-image static"
+              />
+              <img
+                src="/assets/projects/administrum.webp"
+                alt="Sistema de Gestión de Condominios"
+                width="640"
+                height="322"
+                class="project-image webp"
+              />
+            </div>
+            <h3>Gestión de Condominios</h3>
+            <span>Mi primer multi-tenant!! 🤯</span>
+            <p>
+              Me recomendaron para realizar un sistema para la administración de
+              condominios, incluyendo gestión de residentes, pagos y
+              mantenimiento. Cada residencial tenia su propia url, con su propia
+              base de datos.
+            </p>
+          </div>
+
+          <div class="project">
+            <div class="project-image-container">
+              <img
+                src="/assets/projects/mayer.png"
+                alt="Imagen estática de Mayer"
+                class="project-image static"
+              />
+              <img
+                src="/assets/projects/mayer.webp"
+                alt="Sistema para Clínicas Oftalmológicas"
+                width="640"
+                height="322"
+                class="project-image webp"
+              />
+            </div>
+            <h3>Gestión de Clinica Oftalmológica</h3>
+            <span>Usando Laravel 11! 🤩</span>
+            <p>
+              Un amigo me contactó para digitalizar procesos una clinica con 110
+              años de antiguedad; incluyendo expedientes médicos, citas y
+              seguimiento de pacientes a través de WhatsApp.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Componente responsable de las interacciones con los proyectos -->
+    <ProjectsAnimator client:load />
+
+    <hr />
+
+    <div class="awards-container">
+      <h2>Reconocimientos Destacados</h2>
+
       <div class="projects-grid">
         <div class="project">
-          <img
-            src="/assets/grupoaalmma.webp"
-            alt="Sistema de Gestión Médica AALMMA"
-            width="300"
-          />
-          <h3>Brigadas de salud rurales</h3>
-          <span>Mi primer sistema 🥹</span>
+          <h3>Finalista en Hackathon, Campus Party Guadalajara 2018</h3>
+          <span>Record Guiness de asistencia 😧</span>
           <p>
-            Hecho con CakePHP. Viajé en múltiples ocasiones con un grupo de
-            estudiantes médicos, ejecutando este sistema para gestionar
-            pacientes, medicamentos y consultas.
+            Dormí en una casa de acampar una semana, comiendo solamente pizza
+            🍕, mientras presentaba mi proyecto de brigadas medicas rurales.
           </p>
         </div>
 
         <div class="project">
-          <img
-            src="/assets/projects/mj.gif"
-            alt="Sistema de Gestión de Ministerios"
-            width="300"
-          />
-          <h3>Ministerio Juvenil</h3>
-          <span>Hecho absolutamente con JS 🤯</span>
+          <h3>Publicación en Revista Científica</h3>
+          <span>Mi proyecto de titulación 🤓</span>
           <p>
-            Para el servicio social, me aventé este sistema para la
-            administración de ministerios y clubes orientados a la obra de Dios
-            en mi universidad.
-          </p>
-          <p>Angular, MongoDB, NodeJS, Express.</p>
-        </div>
-
-        <div class="project">
-          <img
-            src="/assets/condominios.webp"
-            alt="Sistema de Gestión de Condominios"
-            width="300"
-          />
-          <h3>Gestión de Condominios</h3>
-          <span>Hecho con Laravel Voyager 🛳️</span>
-          <p>
-            Me contactaron para realizar un sstema integral para la
-            administración de condominios, incluyendo gestión de residentes,
-            pagos y mantenimiento.
+            Mi asesor de proyecto me recomendó publicar mi trabajo en la <a
+              href="https://revistas.unac.edu.co/ojs/index.php/unaciencia/article/view/227"
+              target="_blank"
+              rel="noopener">revista colombiana Uniciencia.</a
+            >
           </p>
         </div>
 
         <div class="project">
-          <img
-            src="/assets/projects/mayer.gif"
-            alt="Sistema para Clínicas Oftalmológicas"
-            width="300"
-          />
-          <h3>Gestión de Clinica Oftalmológica</h3>
-          <span>Usando Laravel 11! 🤩</span>
+          <h3>Money 2020 en Las Vegas</h3>
+          <span>Me gané una Macbook 😂</span>
           <p>
-            Un amigo me contactó para digitalizar procesos de la Clinica Mayer
-            en Obregón, Sonora; incluyendo expedientes médicos, citas y
-            seguimiento de pacientes a través de WhatsApp.
+            Simplemente me gané una Macbook Air en una rifa, durante un evento
+            que reune a las mejores fintech del mundo.
           </p>
         </div>
       </div>
-    </p>
-
-    <style>
-      .about-image {
-        float: right;
-        max-width: 300px;
-      }
-
-      .about-image img {
-        border-radius: 8px;
-        margin-bottom: 1.5em;
-        width: 100%;
-        height: auto;
-      }
-
-      @media (max-width: 1020px) {
-        .about-image {
-          float: none;
-          margin: 0 auto 2em;
-          text-align: center;
-        }
-      }
-
-      .projects-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2em;
-        margin: 2em 0;
-      }
-
-      @media (max-width: 768px) {
-        .projects-grid {
-          grid-template-columns: 1fr;
-        }
-      }
-
-      .project {
-        background: var(--background-secondary);
-        border-radius: 8px;
-        padding: 1.5em;
-        transition: transform 0.2s ease;
-      }
-
-      .project p,
-      .proejct span {
-        font-size: 1.1rem;
-        line-height: 1.7;
-        margin: 0.5em 0;
-        text-align: justify;
-      }
-
-      .project:hover {
-        transform: translateY(-5px);
-      }
-
-      .project img {
-        width: 100%;
-        border-radius: 4px;
-        margin-bottom: 1em;
-      }
-
-      .project h3 {
-        margin: 0.5em 0;
-      }
-
-      h2 {
-        margin: 2em 0 1em;
-      }
-
-      .tech-stacks {
-        display: flex;
-        gap: 2rem;
-        margin: 1rem 0;
-        flex-wrap: wrap;
-      }
-
-      .stack {
-        flex: 1;
-        min-width: 250px;
-        padding: 1rem;
-        border-radius: 8px;
-        background: var(--background-secondary);
-      }
-
-      .stack h4 {
-        margin: 0 0 1rem 0;
-        text-align: center;
-      }
-
-      .tech-icons {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-      }
-
-      .tech-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-      }
-
-      .tech-item span {
-        font-size: 0.9rem;
-        color: var(--text-color);
-      }
-
-      .tech-icon {
-        width: 40px;
-        height: 40px;
-        transition: transform 0.2s;
-        filter: brightness(0) invert(0);
-      }
-
-      .tech-icon:hover {
-        transform: scale(1.2);
-      }
-
-      :global(.theme-dark) .tech-icon {
-        filter: brightness(0) invert(1);
-      }
-
-      /* Excepciones para íconos específicos */
-      :global(.theme-dark) .tech-icon[src*="linux.svg"] {
-        filter: brightness(0.8) invert(0);
-      }
-
-      /* Excepciones para íconos específicos */
-      :global(.theme-dark) .tech-icon[src*="csharp.svg"] {
-        filter: brightness(1) invert(0.2);
-      }
-
-      /* Excepciones para íconos específicos */
-      :global(.theme-dark) .tech-icon[src*="apache.svg"] {
-        filter: brightness(1) invert(0);
-      }
-
-      @media (max-width: 768px) {
-        .tech-stacks {
-          flex-direction: column;
-          gap: 1rem;
-        }
-
-        .stack {
-          width: 100%;
-        }
-      }
-    </style>
+    </div>
   </div>
 </BaseLayout>

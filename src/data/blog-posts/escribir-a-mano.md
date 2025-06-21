@@ -4,6 +4,7 @@ publishDate: 01 May 2025
 description: Reflexiones sobre el impacto de la digitalización en nuestra creatividad y bienestar.
 categories:
   - Reflexiones
+  - Tecnología
 status: published
 ---
 

@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import BlogCategoryFilter from "../../components/BlogCategoryFilter.svelte";
 
 const title = "Blog";
 const description = "Latest articles.";
@@ -47,7 +48,6 @@ const allCategories = [
           const categories = post.frontmatter.categories || [];
           return (
             <div class="post-item" data-categories={categories.join(",")}>
-              {index !== 0 && <hr />}
               <h2>
                 <a href={href}>{post.frontmatter.title}</a>
               </h2>
@@ -62,45 +62,15 @@ const allCategories = [
                   ))}
                 </div>
               </div>
+              <hr />
             </div>
           );
         })
       }
     </div>
   </div>
+  <BlogCategoryFilter client:load />
 </BaseLayout>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const posts = document.querySelectorAll<HTMLElement>(".post-item");
-    const categoryButtons =
-      document.querySelectorAll<HTMLButtonElement>(".category");
-
-    categoryButtons.forEach((button) => {
-      button.addEventListener("click", () => {
-        // Actualizar botones activos
-        categoryButtons.forEach((btn) => btn.classList.remove("active"));
-        button.classList.add("active");
-
-        const selectedCategory = button.dataset.category;
-
-        // Filtrar posts
-        posts.forEach((post) => {
-          if (selectedCategory === "all") {
-            post.classList.remove("hidden");
-          } else {
-            const categories = post.dataset.categories?.split(",") || [];
-            if (categories.includes(selectedCategory)) {
-              post.classList.remove("hidden");
-            } else {
-              post.classList.add("hidden");
-            }
-          }
-        });
-      });
-    });
-  });
-</script>
 
 <style>
   h2,

@@ -45,10 +45,18 @@ const permalink = `${Astro.site.href}blog/${slug}`;
       <Content />
     </article>
     <hr />
-    <!-- <Bio /> -->
+
+    <div
+      id="zoomment"
+      data-theme="dark"
+      data-language="es"
+      data-emotions="❤️,😀,🪄,🥸,💡,🤔,💩,😢"
+    >
+    </div>
   </div>
 </BaseLayout>
 
+<script src="/js/zoomment.min.js" is:inline></script>
 <style>
   header {
     text-align: center;
