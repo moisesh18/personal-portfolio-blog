@@ -10,26 +10,44 @@
 
     const observer = new IntersectionObserver(
       (entries, observer) => {
-        entries.forEach((entry) => {
-          const project = entry.target;
-          if (entry.isIntersecting) {
-            if (isMobile) {
-              project.classList.add("is-active"); // Activate on mobile when visible
-            } else {
-              project.addEventListener("mouseover", () => {
-                project.classList.add("is-active");
-              });
-              project.addEventListener("mouseout", () => {
-                project.classList.remove("is-active");
-              });
+        // Helpers para separar la lógica de móvil y escritorio y evitar anidaciones
+        const handleMobile = (isIntersecting, project) => {
+          if (isIntersecting) {
+            if (project._hideTimeout) {
+              clearTimeout(project._hideTimeout);
+              project._hideTimeout = null;
             }
-            observer.unobserve(project);
-          } else if (!isMobile) {
-            project.classList.remove("is-active"); // Remove on desktop when not visible
+            project.classList.add("is-active");
+          } else {
+            if (project._hideTimeout) clearTimeout(project._hideTimeout);
+            project._hideTimeout = setTimeout(() => {
+              project.classList.remove("is-active");
+              project._hideTimeout = null;
+            }, 2000);
           }
+        };
+
+        const handleDesktop = (isIntersecting, project) => {
+          if (isIntersecting) {
+            project.addEventListener("mouseover", () =>
+              project.classList.add("is-active")
+            );
+            project.addEventListener("mouseout", () =>
+              project.classList.remove("is-active")
+            );
+            observer.unobserve(project);
+          } else {
+            project.classList.remove("is-active");
+          }
+        };
+
+        entries.forEach(({ target: project, isIntersecting }) => {
+          isMobile
+            ? handleMobile(isIntersecting, project)
+            : handleDesktop(isIntersecting, project);
         });
       },
-      { threshold: 0.5 } // Trigger when 50% is visible
+      { threshold: 1 }
     );
 
     projects.forEach((project) => {

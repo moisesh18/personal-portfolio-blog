@@ -1,14 +1,14 @@
 import { defineConfig } from 'astro/config'
 import svelte from '@astrojs/svelte'
-import mdx from '@astrojs/mdx'
 import remarkGfm from 'remark-gfm'
 import remarkSmartypants from 'remark-smartypants'
 import rehypeExternalLinks from 'rehype-external-links'
+import rehypeImgLazy from './src/utils/rehype-img-lazy.mjs'
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://moiseshernandez.net/',
-  integrations: [mdx(), svelte()],
+  integrations: [svelte()],
   markdown: {
     shikiConfig: {
       theme: 'nord',
@@ -21,6 +21,7 @@ export default defineConfig({
           target: '_blank',
         },
       ],
+      rehypeImgLazy,
     ],
   },
 })
