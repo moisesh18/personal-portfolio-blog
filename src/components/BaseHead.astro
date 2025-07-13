@@ -1,16 +1,16 @@
 ---
-import { ViewTransitions } from 'astro:transitions'
-import '../styles/fonts.css'
-import '../styles/global.css'
+import { ViewTransitions } from "astro:transitions";
+import "../styles/fonts.css";
+import "../styles/global.css";
 
 export interface Props {
-  title: string
-  description: string
-  permalink: string
+  title: string;
+  description: string;
+  permalink: string;
 }
 
-const { title, description, permalink } = Astro.props
-const socialUrl = Astro.site.href + 'assets/social.png'
+const { title, description, permalink } = Astro.props;
+const socialUrl = Astro.site.href + "assets/social.png";
 ---
 
 <!-- Global Metadata -->
@@ -39,16 +39,29 @@ const socialUrl = Astro.site.href + 'assets/social.png'
 
 <ViewTransitions />
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CL5NWRMQQK"
+></script>
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-CL5NWRMQQK");
+</script>
+
 <!-- This is intentionally inlined to avoid FOUC -->
 <script is:inline>
-  var root = document.documentElement
-  var theme = localStorage.getItem('theme')
+  var root = document.documentElement;
+  var theme = localStorage.getItem("theme");
   if (
-    theme === 'dark' ||
-    (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)
+    theme === "dark" ||
+    (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)
   ) {
-    root.classList.add('theme-dark')
+    root.classList.add("theme-dark");
   } else {
-    root.classList.remove('theme-dark')
+    root.classList.remove("theme-dark");
   }
 </script>
