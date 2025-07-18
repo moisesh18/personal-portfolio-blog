@@ -23,7 +23,7 @@
             project._hideTimeout = setTimeout(() => {
               project.classList.remove("is-active");
               project._hideTimeout = null;
-            }, 2000);
+            }, 3000);
           }
         };
 

@@ -26,7 +26,7 @@ Así que en resumen, este proyecto reune 3 de pasiones personales:
 
 - **Escribir**: de manera personal, para mis amigos y familia.
 - **Compartir conocimiento**: hablar acerca de las cosas que me apasionan, de interés general.
-- **Desarrollo web**: realicé este sitio con tecnologías que no había usado: (Astro + markdown, hosteado en Vercel) lo cual representa un reto personal, ya que no me dedico al diseño web 🤪
+- **Desarrollo web**: realicé este sitio con tecnologías interesantes: ([Astro](https://astro.build/), [Markdown](https://markdown.es/markdown), [Zoomment](https://zoomment.com/), [Vercel](https://vercel.com/)) las cuales moría de ganas de implementar en un proyecto personal 🤪
 
 <br/>
 
