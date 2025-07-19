@@ -26,7 +26,7 @@ Así que en resumen, este proyecto reune 3 de pasiones personales:
 
 - **Escribir**: de manera personal, para mis amigos y familia.
 - **Compartir conocimiento**: hablar acerca de las cosas que me apasionan, de interés general.
-- **Desarrollo web**: realicé este sitio con tecnologías interesantes: ([Astro](https://astro.build/), [Markdown](https://markdown.es/markdown), [Zoomment](https://zoomment.com/), [Vercel](https://vercel.com/)) las cuales moría de ganas de implementar en un proyecto personal 🤪
+- **Desarrollo web**: realicé este sitio con tecnologías interesantes: ([Astro](https://astro.build/), [Markdown](https://markdown.es/markdown), [Zoomment](https://zoomment.com/), [Vercel](https://vercel.com/)) las cuales moría de ganas de implementar en un proyecto personal.
 
 <br/>
 
@@ -44,9 +44,9 @@ Mi sueño es que sea un sitio donde encuentres:
 
 ## Agradecimientos a mi familia
 
-- **Mi abuela**: Cuando murió prometí que todo el que me conozca, le haría saber que tengo un cachito de ella - mis ojos chinos 🥹
+- **Mi abuela**: Cuando murió prometí que todo el que me conozca, le haría saber que tengo un cachito de ella: mis ojos chinos.
 - **Mi mamá**: Cuando graduó de la universidad a los 60 años, me dio el ejemplo más grande de que con perseverancia y comunión con Dios, los sueños no tienen fecha de caducidad
-- **Mi hermana**: Cuando tuvo el valor de adoptar al hijo de mi primo, le dio a toda mi familia una cátedra de la compasión y la valentía que aprendió de mi abuela. En realidad nunca podré ser tan cool como lo es mi hermana 🥹
+- **Mi hermana**: Cuando tuvo el valor de adoptar al hijo de mi primo, le dio a toda mi familia una cátedra de la compasión y la valentía que aprendió de mi abuela. En realidad nunca podré ser tan cool como lo es mi hermana.
 - **Mi amor**: Cuando descubrí la calidad del amor de Sofy, comprendí que mi ambición más grande en la vida debería ser convetirme en la mejor pareja posible. Sigo trabajando en ello, su amor me inspira a ser mejor cada día y por eso puedo decir que la amo con toda mi alma.
 
 Me gusta recordar que este blog puede ser una forma de contacto, y que **escribir hace que estemos más presentes**.
