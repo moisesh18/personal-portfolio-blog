@@ -2,6 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 /*import Bio from '../../components/Bio.astro'; */
 import getPostData from "../../utils/getPostData";
+import ZoommentThemeSync from "../../components/ZoommentThemeSync.svelte";
 
 export async function getStaticPaths() {
   const posts = await Astro.glob("../../data/blog-posts/*.md");
@@ -45,14 +46,11 @@ const permalink = `${Astro.site.href}blog/${slug}`;
     </article>
     <hr />
 
-    <div
-      id="zoomment"
-      data-theme="dark"
-      data-language="es"
-      data-emotions="👍🏽,🫨,❤️,⭐️,👎🏽"
-    >
-    </div>
+    <div id="zoomment" data-language="es" data-emotions="👍🏽,🫨,❤️,⭐️,👎🏽"></div>
   </div>
+
+  <!-- Componente Svelte para sincronizar el tema de Zoomment -->
+  <ZoommentThemeSync client:load />
 </BaseLayout>
 
 <script src="/js/zoomment.min.js" is:inline></script>

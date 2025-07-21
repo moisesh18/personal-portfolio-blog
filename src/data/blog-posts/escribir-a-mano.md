@@ -5,7 +5,7 @@ description: Reflexiones sobre el impacto de la digitalización en nuestra creat
 categories:
   - Reflexiones
   - Tecnología
-status: published
+status: draft
 ---
 
 ¿No creen que ser tan digitales nos afecta en nuestro día a día? Para imaginar cosas nuevas necesitas aburrirte. Si no te aburres, ¿en qué momento se te ocurren las ideas que van a cambiar tu vida?

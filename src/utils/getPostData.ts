@@ -7,8 +7,13 @@ type Post = {
 }
 
 export default function getPostData(post: Post) {
+  const stats = readingTime(post.rawContent())
+  const minutes = Math.ceil(stats.minutes)
+  
+  const readingTimeText = `${minutes} min de lectura`
+
   return {
     slug: post.file.split('/').pop().split('.').shift(),
-    readingTime: readingTime(post.rawContent()).text,
+    readingTime: readingTimeText,
   }
 }
