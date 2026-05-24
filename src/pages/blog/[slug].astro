@@ -5,7 +5,7 @@ import getPostData from "../../utils/getPostData";
 import ZoommentThemeSync from "../../components/ZoommentThemeSync.svelte";
 
 export async function getStaticPaths() {
-  const posts = await Astro.glob("../../data/blog-posts/*.md");
+  const posts = await Astro.glob("../../data/blog-posts/**/*.md");
   return posts.map((p) => ({
     params: { slug: p.file.split("/").pop().split(".").shift() },
     props: { post: p },
@@ -16,6 +16,13 @@ const { Content, frontmatter } = Astro.props.post;
 const { title, description, publishDate, categories } = frontmatter;
 const { slug, readingTime } = getPostData(Astro.props.post);
 const permalink = `${Astro.site.href}blog/${slug}`;
+
+const postStyles = import.meta.glob("../../styles/blog/*.css");
+const stylePath = `../../styles/blog/${slug}.css`;
+
+if (postStyles[stylePath]) {
+  await postStyles[stylePath]();
+}
 ---
 
 <BaseLayout
@@ -41,7 +48,7 @@ const permalink = `${Astro.site.href}blog/${slug}`;
     <h1>{title}</h1>
   </header>
   <div class="container">
-    <article class="content">
+    <article class:list={["content", `content--${slug}`]}>
       <Content />
     </article>
     <hr />
@@ -82,12 +89,5 @@ const permalink = `${Astro.site.href}blog/${slug}`;
   header hr {
     min-width: 100px;
     width: 30%;
-  }
-
-  :global(.content img) {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
   }
 </style>

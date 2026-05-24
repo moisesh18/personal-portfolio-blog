@@ -13,7 +13,7 @@ En el capitulo titulado **"Summer Man"** (8x4) de la serie Mad Men, Don Draper s
 
 > Somos imperfectos, porque siempre queremos mucho más; y estamos arruinados porque tenemos todas estas cosas pero seguimos deseando lo que alguna vez tuvimos.
 
-Cuando vi ese capitulo durante la pandemia, me marcó fuertemente. De hecho esa es la razón por la cual comencé a practicar natación y a escribir de manera personal.
+Cuando vi ese capitulo durante la pandemia, me marcó. De hecho esa es la razón por la cual comencé a practicar natación y a escribir de manera personal.
 Poco a poco fui redescubriendo **mi pasión por escribir** (no muchos saben pero durante la adolescencia pasó por mi mente ser escritor, afortunadamente me arrepentí)
 
 Además de escribir para mi, también **me apasiona mucho compartir conocimiento**: consejos, trucos, datos curiosos, etc. Todos estos años lo he hecho a través de mis historias de Instagram, pero en mis tiempos libres buscaba una mejor forma de hacerlo... es ahí donde nace la idea de un blog.
@@ -22,7 +22,7 @@ Como ingeniero, sé que podía fácilmente iniciar un blog personal en wordpress
 
 <br/>
 
-Así que en resumen, este proyecto reune 3 de pasiones personales:
+Básicamente este proyecto reune 3 de pasiones personales:
 
 - **Escribir**: de manera personal, para mis amigos y familia.
 - **Compartir conocimiento**: hablar acerca de las cosas que me apasionan, de interés general.
@@ -49,4 +49,4 @@ Mi sueño es que sea un sitio donde encuentres:
 - **Mi hermana**: Cuando tuvo el valor de adoptar al hijo de mi primo, le dio a toda mi familia una cátedra de la compasión y la valentía que aprendió de mi abuela. En realidad nunca podré ser tan cool como lo es mi hermana.
 - **Mi amor**: Cuando descubrí la calidad del amor de Sofy, comprendí que mi ambición más grande en la vida debería ser convetirme en la mejor pareja posible. Sigo trabajando en ello, su amor me inspira a ser mejor cada día y por eso puedo decir que la amo con toda mi alma.
 
-Me gusta recordar que este blog puede ser una forma de contacto, y que **escribir hace que estemos más presentes**.
+Me gusta pensar que este blog puede ser una forma de contacto, y que **escribir hace que estemos más presentes**.

@@ -6,7 +6,7 @@ const title = "Blog";
 const description = "Latest articles.";
 const permalink = `${Astro.site.href}blog`;
 
-let allPosts = await Astro.glob("../../data/blog-posts/*.md");
+let allPosts = await Astro.glob("../../data/blog-posts/**/*.md");
 allPosts = allPosts
   .sort(
     (a, b) =>
@@ -96,7 +96,7 @@ const allCategories = [
     padding: 0.5rem 1rem;
     border-radius: 4px;
     background: var(--bg-secondary);
-    color: var(--text-primary);
+    color: var(--text-main);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 0.9em;
@@ -111,7 +111,7 @@ const allCategories = [
 
   .category.active {
     background: var(--accent);
-    color: var(--bg-primary);
+    color: #fff;
   }
 
   .post-categories {
