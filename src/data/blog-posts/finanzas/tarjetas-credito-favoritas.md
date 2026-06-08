@@ -7,9 +7,7 @@ categories:
 status: published
 ---
 
-Me encanta hablar de este tema y dar recomendaciones.
-
-En general detesto las comisiones y las anualidades. Trato de evitarlas porque sé que los bancos se benefician de que yo las use… así que, ¿por qué no sacarles provecho?
+Las personas cercanas a mi saben que detesto las comisiones y anualidades y que me encanta hablar de este tema y dar recomendaciones. Aquí te van mis mejores tarjetas:
 
 ## Nómina
 
@@ -19,15 +17,14 @@ Recuerda que no deberías pagar a ningún banco por guardar tu nómina; de hecho
 
 ### **Banorte** con portabilidad hacia **Banamex**.
 
-La mayoría de beneficios son similares entre bancos. A mi me gusta Banamex porque su app es muy buena y nunca he tenido problemas, [los beneficios que recibo son](https://www.banamex.com/portabilidad-de-nomina/):
+En mi caso tuve que realizar una [portabilidad de nómina](https://www.banamex.com/portabilidad-de-nomina/index.html) ya que en la empresa donde trabajo solo pagan con Banorte y los depósitos a cualquier otro banco **no** se reconocen como nómina; por lo cual debe ser un traspaso de nómina.
+La mayoría de beneficios son similares entre bancos, pero me gusta Banamex porque su app es muy buena y nunca he tenido problemas, [los beneficios que recibo son](https://www.banamex.com/portabilidad-de-nomina/):
 
-- Reembolso de anualidad de mi tarjeta de crédito ($1,600mxn al año)
+- Reembolso de anualidad de mi tarjeta de crédito Platinum Banamex ($3,200mxn al año)
 - Seguro de vida
 - Asistencia funeraria para esposa, padres y suegros.
 - Veterinario
 - Mejores tasas en créditos
-
-Para poder tener beneficios de la nómina debes procurar que tu banco reconozca las transferencias de tu empresa, en mi caso tuve que realizar una [portabilidad de nómina](https://www.banamex.com/portabilidad-de-nomina/index.html) ya que en la empresa donde trabajo solo pagan con Banorte, y los depósitos a cualquier otro banco **no** se reconocen como nómina; por lo cual debe ser un traspaso de nómina.
 
 ---
 
@@ -41,7 +38,7 @@ Tener el dinero ahí guardado genera ciertos rendimientos decentes.
 
 Transfiero el dinero ahí y me olvido de que existe porque intento tener siempre ahí un fondo de emergencia de $50,000 MXN.
 
-Nunca he necesitado la tarjeta física; de hecho abrí la cuenta en menos de 15 minutos.
+Abrí la cuenta en menos de 15 minutos, de hecho nunca he necesitado la tarjeta física.
 
 ---
 
@@ -57,7 +54,7 @@ Buena aplicación (últimamente), buena tecnología en sucursales. Incluso puede
 
 ![Hey Banco](/assets/tarjetas/hey-banco.jpg)
 
-La uso solamente para hacer retiros sin tarjeta en cajeros cercanos a mí. Abrí mi cuenta digital, jamás he tenido que ir a sucursal; de hecho no tengo ni la tarjeta física.
+La uso solamente para retiros sin tarjeta y ahorrarme la comisión cuando no tengo un cajero de los míos cerca. Abrí mi cuenta digital, jamás he tenido que ir a sucursal; de hecho no tengo ni la tarjeta física.
 
 ---
 
@@ -111,7 +108,7 @@ Tiene beneficios de MSI y exento anualidad porque tengo mi nómina con banamex.
 
 ---
 
-## ¿Cada cuando uso mi tarjeta?
+## En resumen...
 
 | Situación                         | Tarjeta que uso             |
 | --------------------------------- | --------------------------- |

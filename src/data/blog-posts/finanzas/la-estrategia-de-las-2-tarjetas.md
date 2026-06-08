@@ -18,10 +18,6 @@ La idea es no perder el control con fechas de corte, anualidades y tentación de
 
 Honestamente yo no la sigo al pie de la letra: tengo más de dos tarjetas porque cada una cubre un nicho (Soriana, Volaris, Amex). Pero lo importante es aplicar el principio: **separar gasto corriente de gasto a plazos y no acumular plásticos que no uso.**
 
-Las reglas concretas que sigo para no endeudarme las escribí en [Estrategias para no endeudarse con tarjetas](/blog/estrategias-para-no-endeudarse-con-tarjetas).
-
 ---
 
 ¿Tú cuántas tarjetas manejas?
-
-Gracias por leer. Saludos.

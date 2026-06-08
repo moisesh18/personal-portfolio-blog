@@ -12,7 +12,7 @@ status: published
 ![Tarjeta Klar](/assets/tarjetas/klar.png)
 
 La abrí cuando daban cashback en débito, tiene micro-prestamos que sí me sacaron de un apuro en algún momento pero dejaron de tener esos beneficios.
-Me llama la atención su tarjeta plateada con Mastercard Platinum... pero piden muchos requisitos para solicitarla.
+Me llama la atención su tarjeta plateada con Mastercard Platinum... pero piden muchos requisitos para solicitarla. En realidad considero que ya no ofrece nada interesante.
 
 ## Mercado Pago
 

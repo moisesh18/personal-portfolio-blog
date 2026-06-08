@@ -11,7 +11,7 @@ allPosts = allPosts
   .sort(
     (a, b) =>
       new Date(b.frontmatter.publishDate).valueOf() -
-      new Date(a.frontmatter.publishDate).valueOf()
+      new Date(a.frontmatter.publishDate).valueOf(),
   )
   .filter((post) => post.frontmatter.status === "published");
 
@@ -48,10 +48,12 @@ const allCategories = [
           const categories = post.frontmatter.categories || [];
           return (
             <div class="post-item" data-categories={categories.join(",")}>
-              <h2>
-                <a href={href}>{post.frontmatter.title}</a>
-              </h2>
-              <p>{post.frontmatter.description}</p>
+              <div class="post-item-content">
+                <h2>
+                  <a href={href}>{post.frontmatter.title}</a>
+                </h2>
+                <p>{post.frontmatter.description}</p>
+              </div>
               <div class="post-item-footer">
                 <span class="post-item-date">
                   — {post.frontmatter.publishDate}
@@ -110,7 +112,7 @@ const allCategories = [
   }
 
   .category.active {
-    background: var(--accent);
+    background: var(--primary-color);
     color: #fff;
   }
 
@@ -129,8 +131,34 @@ const allCategories = [
     border-radius: 4px;
   }
 
+  #posts-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: stretch;
+  }
+
+  @media (min-width: 768px) {
+    #posts-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
   .post-item {
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+    min-height: 100%;
     transition: opacity 0.3s ease;
+  }
+
+  .post-item-content {
+    min-height: 0;
+  }
+
+  .post-item hr {
+    width: 100%;
+    height: 10px;
+    margin: 1.5rem 0 0;
   }
 
   .post-item.hidden {

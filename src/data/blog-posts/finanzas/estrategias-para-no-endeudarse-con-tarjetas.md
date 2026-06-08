@@ -8,35 +8,28 @@ status: published
 ---
 
 Hace unos años pasé por un momento estresante en mi vida.
-Resulta que cuando compré mi primer auto, seguí gastando como si no tuviera que pagarlo.
-Durante el final de la pandemia, entre el apoyo a mi familia, el súper, viajes, bodas y otras compras, el saldo de mi tarjeta INVEX Volaris 2.0 creció hasta que liquidar se volvió un dolor de cabeza.
+Resulta que cuando compré mi primer auto, seguí gastando como si no tuviera que pagarlo y el saldo de mi tarjeta INVEX Volaris 2.0 creció hasta que liquidar se volvió un dolor de cabeza.
 
-Fueron 2 años que estuve controlando la deuda de esa tarjeta, cambiando mis hábitos y tratando de priorizar mis gastos.
+Al final se resolvió, pero eso implicó cambiar mis hábitos y tratando de priorizar mis gastos.
 Hoy quisiera compartirles lo que he aprendido:
 
 ## Google Calendar es mi aliado
 
-Siempre pongo mis **fechas de corte** y **fechas de pago** en Google Calendar. Suena básico, pero me ayuda muchísimo a organizarme: veo de un vistazo qué tarjeta toca liquidar y cuándo, sobre todo cuando manejas varias con cortes distintos.
+Siempre pongo mis **fechas de corte** y **fechas de pago** en Google Calendar. Suena básico, pero me ayuda muchísimo a organizarme: veo de un vistazo qué tarjeta toca liquidar y cuándo, sobre todo porque mis fechas de corte son distintas.
 
-## No mezclar el súper con muebles.
+## No mezclar el súper con compras grandes.
 
 Escribí sobre esto en [la estrategia de las 2 tarjetas](/blog/la-estrategia-de-las-2-tarjetas).
-Básicamente es que tengas una tarjeta de gastos diarios, donde hagas el super y otra tarjeta de gastos grandes con MSI. Mezclar las dos tarjetas es la forma más rápida confundirse.
+Básicamente es que tengas una tarjeta donde hagas compras "diarias" y otra tarjeta donde hagas compras "extraordinarias". Mezclar las dos tarjetas es la forma más rápida confundirse.
 
 ## Liquidar el total cada mes... de mi tarjeta diaria
 
-En mi tarjeta de gastos diarios, me propongo como meta liquidarla siempre cada mes; y en mi tarjeta de gastos grandes, procuro siempre que todo esté a MSI.
+En mi tarjeta de gastos diarios trato de no tener nada a MSI y la meta es gastar solamente lo que puedo; por otro lado, en mi tarjeta de gastos grandes, procuro siempre que todo esté a MSI y que no supere el 20% de mi sueldo.
 
 ## Fondo de emergencia
 
-Intento mantener ~$50,000MXN en mi cuenta de ahorros para cualquier imprevisto.
-
-## Tener un tope de MSI activos
-
-No me permito pagar mas de 10% de mi sueldo en mensualidades. Invex me enseñó eso.
+Intento mantener ~$50,000MXN en mi cuenta de ahorros para cualquier imprevisto. Fácil decirlo, pero lograrlo ha sido un reto.
 
 ---
 
 ¿Tú cómo te organizas? ¿Te ha pasado algo parecido?
-
-Gracias por leer. Saludos.
