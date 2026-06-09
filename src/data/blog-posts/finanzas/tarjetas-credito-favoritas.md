@@ -7,7 +7,7 @@ categories:
 status: published
 ---
 
-Las personas cercanas a mi saben que detesto las comisiones y anualidades y que me encanta hablar de este tema y dar recomendaciones. Aquí te van mis mejores tarjetas:
+Las personas cercanas a mí saben que detesto las comisiones y anualidades y que me encanta hablar de este tema y dar recomendaciones. Aquí te van mis mejores tarjetas:
 
 ## Nómina
 

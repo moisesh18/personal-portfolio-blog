@@ -2,7 +2,7 @@
 title: Lo que aprendí en mis primeros 3 años como gerente de desarrollo
 publishDate: 07 Jun 2026
 categories:
-  - Tecnologia
+  - Tecnología
 description: Cómo vencer la deuda técnica y no quejarse en el intento
 status: published
 ---
@@ -13,9 +13,9 @@ Festejando mis 3 añitos como Gerente de Desarrollo del sector bancario, quisier
 
 ### El trabajo nunca se acaba...
 
-Este consejo solo lo aprendes cuando lo experimentas. Siempre habrá un nuevo requerimiento, una nueva solicitud incluso aunque estés por entregar una funcionalidad increíble... pero un día de la nada te darás cuenta que llevas meses sin tomar vacaciones y estás más irritable de lo normal.
+Este consejo solo lo aprendes cuando lo experimentas. Debes tener presente que siempre habrá un nuevo requerimiento, una nueva solicitud incluso aunque estés por entregar una funcionalidad increíble... y un día de la nada te darás cuenta que llevas meses sin tomar vacaciones y estás más irritable de lo normal.
 
-Mi recomendación es que por más emocionado que estés por tu trabajo, no debes olvidar priorizarte. Ejercicio, meditación, religión, relaciones sociales... recuerda siempre quién eres y qué es lo que te hace ser tú.
+Mi recomendación es que por más emocionado que estés por tu trabajo, no olvides priorizarte. Ejercicio, meditación, religión, relaciones sociales... recuerda siempre quién eres y qué es lo que te hace ser tú.
 
 Cada uno pasa por su proceso, en mi caso me ayudó mucho conseguir una relación estable y regresar a la natación!
 
@@ -25,11 +25,11 @@ Recuerda que a nivel gerencial solo importan los resultados. No puedes estar tod
 
 Si vas a llegar al burnout, procura que sea por algo en tu lista de pendientes importantes.
 
-Esto es especialmente difícil para los geeks, pero es la diferencia entre un desarrollador senior y un junior.
+Esto es especialmente difícil para los geeks, pero es la diferencia entre un desarrollador experimentado y un un desarrollador ocasional.
 
 ### El 80/20
 
-Ya que elegiste priorizarte y dedicarte a algo realmente importante, lo más seguro es que no tengas tiempo de realizarlo al 100%.
+Ya que elegiste priorizarte y dedicarte a algo realmente importante, lo más seguro es que no tengas tiempo de realizarlo al 100%. 😂
 
 La idea general de este consejo es identificar las veces donde desarrollar el 80% de una tarea puede llevarte menos tiempo que desarrollar el 20% restante.
 
@@ -44,20 +44,18 @@ Este sin duda es el mejor consejo que me ha dado mi jefe, porque representa el b
 
 ### La deuda técnica
 
-A como yo veo las cosas:
+Desde mi punto de vista:
 
 1. dejar deudas técnicas no es malo, lo malo es no documentarlas.
 2. Hay que aprender a vivir con ellas, porque NUNCA se acaban.
 
 Ten en cuenta que no siempre es culpa de los desarrolladores, a veces una simple decisión operativa puede convertir todo nuestro código en una deuda técnica.
 
-Considera que en algún momento le tocará a alguien lidiar con las deudas técnicas que dejaste por enfocarte en otras cosas.
+Mi recomendación es simplemente ser agradecido con el código que nos entregan y tratar de ser empático con la deuda que nos encontramos. Considera que en algún momento le tocará a alguien lidiar con las deudas técnicas que dejaste por enfocarte en otras cosas.
 
-Es por eso que te recomiendo ser agradecido con el código que nos entregan y ser empático con la deuda que encontramos, porque no es sano ir por la vida culpando siempre al desarrollador anterior sin entender sus razones.
+Estoy consciente que hay veces donde el código anterior es imposible de justificar, pero en ese caso te recomiendo ponerlo en tu lista de pendientes futuros y seguir con tu vida... porque tampoco es sano ni se ve bien estar culpando siempre al desarrollador anterior.
 
-Por cierto! Procura editar "deuda técnica" hasta que entiendas por completo el flujo; a veces no es deuda técnica sino desconocimiento del proceso de tu parte.
-
-Claro, hay veces donde el código anterior da pena ajena, pero en ese caso te recomiendo ponerlo en tu lista de pendientes de refactorización y seguir con tu vida.
+Por cierto! Resolver deuda técnica es satisfactorio, pero procura hacerlo hasta que la entiendas por completo; a veces no se trata de una deuda técnica, sino de un proceso que cambió o desconocimiento del flujo completo.
 
 ## Consejos Técnicos
 
@@ -124,7 +122,8 @@ Definir el ciclo de vida y quién es el encargado de validarlo en cada una de su
 
 #### Documentación a nivel infraestructura
 
-Redactar las IPs de los servidores y servicios que alojan, la lista de puertos abiertos en cada servidor, diagramas de interconexión entre ambientes, formatos para solicitar acceso... etc
+Para que los desarrollos fluyan lo más rápido posible, considero que los desarrolladores no pueden mantenerse ajenos a los temas de infraestructura.
+Procura redactar documentos donde expliques las IPs de los servidores y servicios que alojan, la lista de puertos abiertos en cada servidor, diagramas de interconexión entre ambientes, formatos para solicitar acceso... etc.
 
 #### URLs útiles dentro de la empresa
 
@@ -132,6 +131,6 @@ Redactar esta información te permitirá no repetirla cada vez que entre alguien
 
 ---
 
-Todas estas recomendaciones son solo para estabilizar el negocio y dependiendo el caso podrían llegar a tomar años en implementarse. El reto es seguir soltando nuevas mejoras mientras das soporte a lo anterior.
+Todas estas recomendaciones son solo para estabilizar el negocio y dependiendo el caso podrían llegar a tomar años en implementarse. Mi consejo final es que procures hacerlo en una empresa que se preocupe por tu desarrollo profesional y rodearte de personas que te motiven a seguir adelante, como me pasó a mi.
 
-Sigo agradecido con la empresa donde trabajo y estoy muy feliz de las mentorías y el apoyo que he recibido de las personas a mi alrededor!
+El reto siempre será seguir innovando y automatizando la mayor cantidad de cosas mientras resuelves deudas técnicas 🫡

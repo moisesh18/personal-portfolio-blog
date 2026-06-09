@@ -4,7 +4,7 @@ publishDate: 01 May 2025
 description: Reflexiones sobre la autoaceptación y el valor personal.
 ---
 
-Lo que yo no veo en mi, alguna vez alguien lo vio en mi. No ser tan duro conmigo mismo. No regrets.
+Lo que yo no veo en mí, alguna vez alguien lo vio en mí. No ser tan duro conmigo mismo. No regrets.
 
 De nada sirve idealizar lo anterior.
 

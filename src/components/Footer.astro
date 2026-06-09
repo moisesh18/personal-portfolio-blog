@@ -1,5 +1,12 @@
+---
+export interface Props {
+  showText?: boolean;
+}
+const { showText = false } = Astro.props;
+---
+
 <footer>
-  <small>
+  <small class:list={[!showText && "footer-text--hidden"]}>
     &copy; {new Date().getFullYear()}
     Creado con <a href="https://astro.build" target="_blank" rel="noopener"
       >Astro</a
@@ -20,5 +27,9 @@
     padding: 1em 2em;
     text-align: center;
     width: 100%;
+  }
+
+  .footer-text--hidden {
+    visibility: hidden;
   }
 </style>

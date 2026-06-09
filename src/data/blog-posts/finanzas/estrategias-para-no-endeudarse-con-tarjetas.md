@@ -1,5 +1,5 @@
 ---
-title: Estrategias para no endeudarse con tarjetas
+title: Estrategias para no sobregirar tu tarjeta de créditos
 publishDate: 24 Mayo 2026
 description: Lo que aprendí después de endeudarme con Invex al sacar mi coche.
 categories:

@@ -3,7 +3,7 @@ title: 1.softgalaxy.xyz - password
 publishDate: 20 Jul 2025
 description: There is not password. Just pass on it.
 categories:
-  - Tecnologia
+  - Tecnología
 status: published
 ---
 
