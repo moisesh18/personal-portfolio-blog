@@ -1,9 +1,9 @@
 ---
-title: Lo que aprendí en mis primeros 3 años como gerente de desarrollo
+title: Notas de un gerente de desarrollo después de 3 años
 publishDate: 07 Jun 2026
 categories:
   - Tecnología
-description: Cómo vencer la deuda técnica y no quejarse en el intento
+description: Festejando 3 años como gerente de desarrollo en banca — lo que aprendí sobre priorización, deuda técnica y calidad de software.
 status: published
 ---
 
